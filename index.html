@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="main-div">
+      <div class="sideBar_Section">
+        <div class="sidebar-top">
+          <div class="header-sideBar">
+            <h3>Filter</h3>
+            <label class="switch">
+              <input type="checkbox" class="checkbox" id="headerCheckbox" />
+              <div class="slider"></div>
+            </label>
+          </div>
+
+          <p class="sidetop inbox-section "  >
+            <i class="fa-solid fa-inbox "></i>
+            All Task
+          </p>
+
+          <p class="sidetop starred-section">
+            <i class="fa-solid fa-star "></i>
+            Starred
+          </p>
+          <p class="sidetop today-section">
+            <i class="fa-solid fa-calendar-day "></i>
+            Today
+          </p>
+          <p class="sidetop week-section">
+            <i class="fa-solid fa-calendar-week "></i>
+            Week
+          </p>
+        </div>
+        <div class="sidebar-bottom">
+          <div class="sidebar-bottom-header">
+            <h2 class="sidebar-project">
+              Project
+            </h2>
+            <p class="sidebar-project  sidebottom">
+              <i class="fa-solid fa-plus"></i>
+              <!-- <i class="fa-solid fa-xmark"></i> -->
+            </p>
+          </div>
+          <div class="sidebar-subbottom">
+            <form id="project-form" hidden>
+              <input type="text" id="project-name" autofocus autocomplete="off">
+              <input id="submit" type="submit" hidden>
+          </form>
+          <div class="new-projaect"></div>
+
+            <div class="project">
+              <i class="folder fa-solid fa-folder" ></i>
+              <p class="project-name"> Default </p>
+            </div>
+
+          </div>
+         
+      </div>
+      
+      </div>
+      <!-- sub page of tasks -->
+      <div class="right-side">
+        <h3 id="task-title">Tasks</h3>
+        <div class="task-section">
+          <div class="single-task">
+            <div>
+              <label class="container">
+                <input type="checkbox" class="checkedbox" />
+                <div class="checkmark"></div>
+              </label>
+            </div>
+            <p class="PElem">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+              dignissimos fugiat rem earum qui est repellendus repudiandae.
+              Ipsam sunt a sit blanditiis perspiciatis soluta esse voluptatibus
+              tempora ut, beatae quasi.
+            </p>
+            <div class="star-div">
+              <i class="  edit fa-solid fa-pen" ></i>
+              <i class="fa-regular fa-star"></i>
+            </div>
+          </div>
+        </div>
+        <button id="Add-Task-Btn">Add Task +</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
